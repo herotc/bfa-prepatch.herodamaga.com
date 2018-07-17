@@ -1,0 +1,12 @@
+{% if jekyll.environment == "production" %}
+<div id="a-bot-d" class="container">
+  <ins class="adsbygoogle"
+       style="display:block;"
+       data-ad-client="ca-pub-5677349133508739"
+       data-ad-slot="8934153725"
+       data-ad-format="auto"></ins>
+  <script>
+       (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+</div>
+{% endif %}

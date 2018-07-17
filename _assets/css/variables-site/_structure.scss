@@ -1,0 +1,12 @@
+$scrollbar-width: 25px;
+
+$base-padding: 12px;
+$base-margin: 10px;
+
+$body-height-top: 50px;
+$body-padding-top: $base-padding + $body-height-top;
+$body-padding-top-offset: $body-padding-top + $base-padding * 2;
+
+$container-max-width: 1170px;
+
+$content-inner-padding: 24px;

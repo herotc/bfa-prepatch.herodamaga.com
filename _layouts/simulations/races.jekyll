@@ -1,0 +1,24 @@
+---
+layout: default
+---
+
+<div id="content" class="container">
+  <h1>{{ page.title }}</h1>
+  <p>{{ site.data.locale.layouts.simulations.races.description }}</p>
+  {% include_cached layout-parts/simulations/composite.jekyll collection=page.collection tier=page.tier spec=page.spec %}
+  <div class="subnavs-sticky">
+    {% include layout-parts/simulations/fightstylenav.jekyll %}
+    {% include layout-parts/simulations/gearvariationnav.jekyll %}
+  </div>
+  {% include layout-parts/simulations/metas.jekyll %}
+  {% include_cached layout-parts/ads/inarticle.jekyll %}
+  {% include_cached layout-parts/simulations/loading.jekyll %}
+  {% include_cached layout-parts/simulations/googlechart.jekyll chartStyleClass=page.chartStyleClass %}
+  {% include layout-parts/ads/matchedcontent.jekyll %}
+</div>
+<script async src=" //www.gstatic.com/charts/loader.js"></script>
+<script>
+  window.addEventListener("load", function () {
+    window.herodamage.racesInit("{{ page.reportfile }}", "{{ page.charttitle }}", {{ page.templateDPS }});
+  });
+</script>

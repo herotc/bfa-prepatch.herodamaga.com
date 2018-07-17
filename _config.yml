@@ -1,0 +1,74 @@
+name: Hero Damage
+title: Hero Damage
+description: Hero Damage TC Data Collection Site
+url: https://www.herodamage.com
+encoding: utf-8
+timezone: Europe/Paris
+
+collections_dir: collections # Shouldn't start with a '_' else posts aren't generated
+plugins_dir:     _plugins
+layouts_dir:     _layouts
+data_dir:        _data
+includes_dir:    _includes
+
+exclude:
+  - devserve.bat
+  - Gemfile
+  - Gemfile.lock
+  - gulpfile.js
+  - LICENSE
+  - package-lock.json
+  - package.json
+  - README.md
+  - deploy/
+  - node_modules/
+  - script/
+  - vendor/
+
+plugins:
+  - jekyll-include-cache # Let us cache static includes
+  - jekyll-assets # Asset pipelines
+  - jekyll-polyglot # Internationalization and localization
+  - jekyll-redirect-from # Allow multiple permalink for one page
+  - jekyll-feed # Create RSS Feed for the blogposts
+  - jekyll-sitemap # Generate the sitemap.xml
+  - jekyll-paginate # Posts pagination
+  - jemoji # Enable GitHub emojis
+
+# Assets
+assets:
+  source_maps: false
+  defaults:
+    js: { integrity: true }
+    css: { integrity: true }
+    img: { integrity: true }
+  compression: false
+  sources:
+    - _assets/css
+    - _assets/js
+    - _assets/img
+# Polyglot
+languages: ["en", "fr"]
+default_lang: "en"
+exclude_from_localization: ["assets", "report"]
+parallel_localization: false # Doesn't work on Windows and do crash Travis, see https://github.com/untra/polyglot/issues/78
+# Blog
+paginate: 5
+paginate_path: "/blog/page:num/"
+excerpt_separator: <!--more-->
+authors:
+  Aethys:
+    github: aethys256
+  Mystler:
+    github: Mystler
+  Nia:
+    github: Nianel
+# GitHub Pages metadata
+repository: herotc/legion.herodamage.com
+# WoW Classes list
+wowClasses: [death_knight, demon_hunter, druid, hunter, mage, monk, paladin, priest, rogue, shaman, warlock, warrior]
+simulationTypes:
+  - "combinations"
+  - "races"
+  - "relics"
+  - "trinkets"

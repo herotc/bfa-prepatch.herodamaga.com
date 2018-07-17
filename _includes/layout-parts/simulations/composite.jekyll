@@ -1,0 +1,9 @@
+{% assign fightstyles = site.documents | where: "collection", include.collection | where: "tier", include.tier | where: "spec", include.spec | group_by: "fightstyle" %}
+{% assign numFightstyles = fightstyles | size %}
+{% if numFightstyles > 1 %}
+  {% for fightstyle in fightstyles %}
+    {% if fightstyle.name == "Composite" %}
+      <p>{{ site.data.locale.includes.layout-parts.simulations.composite.description }}</p>
+    {% endif %}
+  {% endfor %}
+{% endif %}

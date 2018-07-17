@@ -1,0 +1,57 @@
+---
+layout: default
+---
+
+<div id="content" class="container">
+  <h1>{{ page.title }}</h1>
+  <p>{{ site.data.locale.layouts.simulations.combinations.description | replace: '%s1', page.tier
+                                                                      | replace: '%s2', page.targeterror }}</p>
+  <p>{{ site.data.locale.layouts.simulations.combinations.description2 }}</p>
+  {% include_cached layout-parts/simulations/composite.jekyll collection=page.collection tier=page.tier spec=page.spec %}
+  <div class="subnavs-sticky">
+    {% include layout-parts/simulations/fightstylenav.jekyll %}
+    {% include layout-parts/simulations/gearvariationnav.jekyll %}
+  </div>
+  {% include layout-parts/simulations/metas.jekyll %}
+  {% include_cached layout-parts/ads/inarticle.jekyll %}
+  <table id="combinations-table" class="table table-hover">
+    <thead>
+    <tr id="combinations-table-headers">
+      <th>#</th>
+      <th>{{ site.data.locale.wow.Talents }}</th>
+      <th>{{ site.data.locale.wow.Sets }}</th>
+      <th>{{ site.data.locale.wow.Legendaries }}</th>
+      <th>{{ site.data.locale.wow.DPS }}</th>
+    </tr>
+    <tr id="combinations-table-filters">
+      <th></th>
+      <th>
+        <input id="combinations-table-filter-talents" type="text" class="form-control" onkeyup="window.herodamage.combinationsUpdate();">
+      </th>
+      <th>
+        <select id="combinations-table-filter-sets" title="Sets" class="selectpicker"
+          data-selected-text-format="static" onchange="window.herodamage.combinationsUpdate();" multiple>
+        </select>
+      </th>
+      <th>
+        <select id="combinations-table-filter-legendaries" title="{{ site.data.locale.wow.Legendaries }}" class="selectpicker"
+          data-selected-text-format="static" onchange="window.herodamage.combinationsUpdate();" multiple>
+        </select>
+      </th>
+      <th></th>
+    </tr>
+    </thead>
+    <tbody id="combinations-table-data">
+    </tbody>
+  </table>
+  {% include_cached layout-parts/simulations/loading.jekyll %}
+  <div id="combinations-table-nav" class="text-right"></div>
+  {% include layout-parts/ads/matchedcontent.jekyll %}
+</div>
+<script defer src=" //cdnjs.cloudflare.com/ajax/libs/twbs-pagination/1.4.1/jquery.twbsPagination.min.js"></script>
+<script defer src=" //cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/bootstrap-select.min.js"></script>
+<script>
+  window.addEventListener("load", function () {
+    window.herodamage.combinationsInit("{{ page.reportfile }}");
+  });
+</script>

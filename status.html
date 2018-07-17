@@ -1,0 +1,40 @@
+---
+permalink: /status/
+title: Status
+description: Simulations update dates.
+---
+
+{% for wowClass in site.wowClasses %}
+  {% assign wowClassSize = wowClass | size %}
+  {% assign validCollections = "" %}
+  {% for name in site.simulationTypes %}
+    {% assign validCollections = validCollections | append: wowClass | append: "-" | append: name %}
+    {% unless forloop.last %}
+      {% assign validCollections = validCollections | append: ", " %}
+    {% endunless %}
+  {% endfor %}
+  {% assign simCollections = site.documents | where_exp: "item", "validCollections contains item.collection" | where_exp: "item", "item.collection != wowClass" | group_by: "collection" | sort: "name" %}
+  <div>
+    {% assign wowClassParts = wowClass | split: "_" %}
+    {% capture wowClass_titleized %}{% for wowClassPart in wowClassParts %}{% if forloop.last %}{{ wowClassPart | capitalize }}{% else %}{% assign wowClassPart2 = wowClassPart | append: " " %}{{ wowClassPart2 | capitalize }}{% endif %}{% endfor %}{% endcapture %}
+    <h2>{{ wowClass_titleized }}</h2>
+    <ul>
+      {% for simCollection in simCollections %}
+        {% assign simCollectionNamePrefix = simCollection.name | slice: 0, wowClassSize %}
+        {% if simCollectionNamePrefix == wowClass %}
+          {% assign simType = simCollection.name | split: '-' | last %}
+          <li>
+            <h3>{{ simType | capitalize }}</h3>
+            <ul>
+            {% assign simPages = simCollection.items | sort: 'lastupdate' %}
+            {% for simPage in simPages reversed %}
+              {% assign simName = simPage.path | split: '/' | last %}
+              <li>{{ simName | replace: '.html', '' }} - {{ simPage.lastupdate }}</li>
+            {% endfor %}
+            </ul>
+          </li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </div>
+{% endfor %}

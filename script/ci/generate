@@ -1,0 +1,7 @@
+#!/bin/bash
+
+set -e # Exit with nonzero exit code if anything fails
+
+# Generate views
+echo "[CI] Generating the views"
+bundle exec ruby script/generate/views.rb

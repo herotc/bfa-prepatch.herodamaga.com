@@ -1,0 +1,197 @@
+body {
+  color: $text-color;
+  background-color: $body-bg;
+  padding: $base-padding;
+  padding-top: $body-padding-top;
+
+  // General
+  hr {
+    width: 30%
+  }
+
+  a {
+    color: $link-color;
+
+    &:hover {
+      color: lighten($link-color, 20%);
+    }
+  }
+
+  // Ads
+  .container {
+    &#a-top-d, &#a-bot-d {
+      padding: 0;
+    }
+    &#a-top-d {
+      margin-bottom: $base-padding;
+    }
+    &#a-bot-d {
+      @include MQ(1540px, max-width) {
+        margin-top: $base-padding;
+      }
+      @include MQ(1540px) {
+        margin: $body-height-top / 2 $base-padding 0 $base-padding;
+        max-height: calc(100vh - #{$body-height-top});
+        max-width: 300px;
+        position: fixed;
+        right: calc((100% - #{$container-max-width}) / 4 - #{$base-padding});
+        top: 50%;
+        @include translate(50%, -50%);
+        width: calc(((100% - #{$container-max-width}) / 2) - (#{$base-padding} * 2));
+
+        ins {
+          margin: auto;
+        }
+      }
+    }
+  }
+  p.blockers-text {
+    border: 1px solid $border-dark-lt;
+    border-radius: 12px;
+    margin: 0;
+    padding: 24px;
+    text-align: center;
+  }
+  p.a-inarticle-d, p.a-matchedcontent-d {
+    margin: 24px 0;
+  }
+
+  // Main content
+  #content {
+    background-color: $content-bg;
+    border: 1px solid $border-dark;
+    padding: 24px;
+
+    a.list-group-item {
+      h4.h5 {
+        margin: 0;
+        display: inline;
+      }
+      span.update-date {
+        color: $text-color-dk3;
+        font-weight: bold;
+        float: right;
+      }
+    }
+  }
+
+  // Home article
+  article#home {
+    > section {
+      background-color: $content-bg;
+      border: 1px solid $border-dark;
+      padding: 24px;
+    }
+
+    section#home-introduction {
+      margin-bottom: $base-padding;
+
+      @include MQ($MD) {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+      }
+
+      > * {
+        padding: $base-padding;
+      }
+
+      figure {
+        text-align: center;
+      }
+
+      div#introduction-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+    }
+
+    section#home-picker {
+      nav {
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        a {
+          align-items: center;
+          display: flex;
+          height: 150px;
+          justify-content: center;
+          position: relative;
+          text-align: center;
+          text-decoration: none;
+          width: 225px;
+
+          figure {
+            img {
+              height: 100px;
+              @include t-scale;
+              width: 100px;
+            }
+            figcaption {
+              display: none;
+            }
+          }
+
+          &:hover {
+            figure {
+              img {
+                height: 130px;
+                width: 130px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #simulations-metas {
+    display: flex;
+    margin-top: $base-margin;
+    @include MQ($MD, max-width) {
+      flex-direction: column;
+    }
+    @include MQ($MD) {
+      justify-content: space-around;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+  }
+
+  .center {
+    display: block;
+    margin: 0 auto;
+  }
+
+  // Helper, mostly for row-class divs
+  .vertical-align {
+    @media (min-width: $MD) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: row;
+    }
+  }
+
+  .copybox {
+    align-items: stretch;
+    display: flex;
+
+    textarea {
+      border-radius: 4px 0 0 4px;
+      overflow: hidden;
+      resize: vertical;
+    }
+
+    button {
+      border-width: 1px 1px 1px 0;
+      border-radius: 0 4px 4px 0;
+    }
+  }
+}

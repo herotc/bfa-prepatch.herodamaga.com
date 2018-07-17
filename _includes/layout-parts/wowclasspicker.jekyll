@@ -1,0 +1,12 @@
+<nav>
+  {% for wowClass in site.wowClasses %}
+  {% assign wowClassParts = wowClass | split: "_" %}
+  {% capture wowClassTitleized %}{% for wowClassPart in wowClassParts %}{% if forloop.last %}{{ wowClassPart | capitalize }}{% else %}{% assign wowClassPart2 = wowClassPart | append: " " %}{{ wowClassPart2 | capitalize }}{% endif %}{% endfor %}{% endcapture %}
+  <a href="/{{ wowClass | replace: '_', '-' }}" title="{{ wowClassTitleized }}">
+    <figure>
+      <img src="{% asset wowclasspicker/'{{wowClass}}'.svg @path %}" alt="{{ wowClassTitleized }} WoW Icon">
+      <figcaption><h{{ include.wowClassTitleLevel }}>{{ wowClassTitleized }}</h{{ include.wowClassTitleLevel }}></figcaption>
+    </figure>
+  </a>
+  {% endfor %}
+</nav>
