@@ -95,7 +95,8 @@ langs.each do |lang|
       'buildDate' => json['build_date'].gsub('  ', ' '),
       'targetError' => json['options']['target_error'],
       'buildTimestamp' => json['build_timestamp'],
-      'resultTimestamp' => json['result_timestamp']
+      'resultTimestamp' => json['result_timestamp'],
+      'gitRevision' => json['git_revision']
     }
     wow = {
       'build' => json['options']['dbc'][json['options']['dbc']['version_used']]['build_level'],
@@ -155,6 +156,7 @@ langs.each do |lang|
     front['lastupdate'] = " #{simc['buildDate']}"
     front['buildtimestamp'] = " #{simc['buildTimestamp']}"
     front['resulttimestamp'] = " #{simc['resultTimestamp']}"
+    front['gitrevision'] = " #{simc['gitRevision']}"
     front['build'] = " #{wow['version']} ##{wow['build']}"
 
     if ['Relics', 'Trinkets', 'Races'].include?(reportInfos['type'])
