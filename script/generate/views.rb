@@ -11,7 +11,6 @@ collectionsDir = "collections"
 reportDir = "report"
 simCollections = {
   'Combinator' => 'combinations',
-  'Relics' => 'relics',
   'Trinkets' => 'trinkets',
   'Races' => 'races'
 }
@@ -120,7 +119,7 @@ langs.each do |lang|
       front['gearvariation'] = " #{reportInfos['gearvariation']}"
     end
 
-    if ['Relics', 'Trinkets', 'Races'].include?(reportInfos['type'])
+    if ['Trinkets', 'Races'].include?(reportInfos['type'])
       front['templateDPS'] = " #{json['player']['collected_data']['dps']['mean'].round(0)}"
       player = {
         'talentsName' => [],
@@ -142,11 +141,6 @@ langs.each do |lang|
       front['legendaries'] = "\n  - #{player['legendariesName'].join("\n  - ")}"
     end
 
-    # Write crucibleweight string if it exists
-    if reportInfos['type'] == "Relics" && json['crucibleweight']
-      front['crucibleweight'] = " #{json['crucibleweight']}"
-    end
-
     front['reportfile'] = " #{reportFile}"
     front['targeterror'] = " #{simc['targetError']}"
     front['lastupdate'] = " #{simc['buildDate']}"
@@ -155,15 +149,9 @@ langs.each do |lang|
     front['gitrevision'] = " #{simc['gitRevision']}"
     front['build'] = " #{wow['version']} ##{wow['build']}"
 
-    if ['Relics', 'Trinkets', 'Races'].include?(reportInfos['type'])
+    if ['Trinkets', 'Races'].include?(reportInfos['type'])
       front['charttitle'] = " #{wow['version']} #{reportSpecWithSuffix} #{reportInfos['type']} (#{reportInfos['tier']} SimC Profile, #{simc['buildDate']})"
     end
-
-    # Special hotfix for T19 Relics to hide NC T2 traits
-    if reportInfos['type'] == "Relics" && reportInfos['tier'] == 'T19'
-      front['chartStyleClass'] = ' half-height'
-    end
-
 
     # Write the view
     viewDir = "#{collectionsDir}/_#{reportInfos['class']}-#{simCollections[reportInfos['type']]}"

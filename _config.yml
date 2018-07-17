@@ -70,5 +70,4 @@ wowClasses: [death_knight, demon_hunter, druid, hunter, mage, monk, paladin, pri
 simulationTypes:
   - "combinations"
   - "races"
-  - "relics"
   - "trinkets"

@@ -58,7 +58,6 @@
     "simulations": {
       "collections": {
         "Combinator": "Combinaisons",
-        "Relics": "Reliques",
         "Trinkets": "Bijoux",
         "Races": "Races"
       },
@@ -90,11 +89,6 @@
       },
       "races": {
         "description": "Si vous êtes intéressé par la comparaison des différentes races dans World of Warcraft pour cette extension, vous pouvez consulter le tableau suivant. Cependant, gardez à l'esprit que les différences de race sont généralement plutôt petites et peuvent changer avec les mises à jours et les changements de gameplay. Vous pouvez toujours jouer la race que vous voulez jouer et ne devez pas vous sentir obligé de la choisir en fonction de ce tableau."
-      },
-      "relics": {
-        "description": "Ce graphique montre l'impact des traits des reliques de votre artefact sur votre DPS. Vous pouvez voir la valeur d'un trait additionnel par rapport à d'autres ou à de l'ilevel d'arme supplémentaire.",
-        "description2": "Les chiffres dans le graphique indiquent le nombre d'ilevel ou de traits. Les simulations des traits montrent <em>seulement</em> le gain obtenu par ce dernier. Cela inclut les traits du creuset T2.",
-        "description3": "Afin de comparer les reliques avec ce tableau, vous devez ajouter les valeurs pour les traits et l'augmentation du niveau d'objet d'arme. Cependant, vous devriez <b>simuler votre propre personnage</b> pour trouver votre meilleure setup. Ces simulations sont basées sur des profils prédéfinis (ceux de SimulationCraft) au lieu des vôtres. Cela signifie que les données présentées ici <b>dépendent fortement</b> du profil utilisé avec ses talents, légendaires, etc. et donnent plutôt une perspective. Si votre personnage est différent de la configuration utilisée ici, des simulations personnelles sont recommandées."
       },
       "trinkets": {
         "description": "Ici, vous pouvez comparer l'augmentation DPS venant des bijoux.",

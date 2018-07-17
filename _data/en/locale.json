@@ -58,7 +58,6 @@
     "simulations": {
       "collections": {
         "Combinator": "Combinations",
-        "Relics": "Relics",
         "Trinkets": "Trinkets",
         "Races": "Races"
       },
@@ -92,11 +91,6 @@
       },
       "races": {
         "description": "If you are interested in how the different races in World of Warcraft compare for this build, you can check out the following chart. However, keep in mind that race differences are usually rather small and can change with balance and gameplay changes. You can always play the race you want to play and don't have to feel compelled to choose based on this chart."
-      },
-      "relics": {
-        "description": "This chart shows the impact of artifact relic traits on your DPS. You will see how much an additional trait is worth compared to additional item levels on your weapon.",
-        "description2": "The numbers in the chart show the amount of item levels or traits. Trait simulations <em>only</em> show the increase from that particular trait. This includes crucible T2 traits.",
-        "description3": "In order to compare relics with this chart, you have to add the values for the traits and the weapon item level increase. However, you should <b>simulate your own character</b> to find your best setup. These simulations are based on predefined gear sets instead of your own, after all. This means data shown here <b>depends heavily</b> on the used profile with its talents, legendaries etc. and is rather giving an outlook. If your character is different from the setup used here, personal simulations are recommended."
       },
       "trinkets": {
         "description": "Here, you can compare expected DPS increase from trinkets.",

@@ -32,16 +32,7 @@ defaults:
     values:
       layout: "simulations/races"
       wowClass: "death_knight"
-      order: 4
-      chartStyleClass: "full-height"
-  -
-    scope:
-      path: ""
-      type: "death_knight-relics"
-    values:
-      layout: "simulations/relics"
-      wowClass: "death_knight"
-      order: 2
+      order: 3
       chartStyleClass: "full-height"
   -
     scope:
@@ -50,7 +41,7 @@ defaults:
     values:
       layout: "simulations/trinkets"
       wowClass: "death_knight"
-      order: 3
+      order: 2
       chartStyleClass: "full-height"
   -
     scope:
@@ -73,16 +64,7 @@ defaults:
     values:
       layout: "simulations/races"
       wowClass: "demon_hunter"
-      order: 4
-      chartStyleClass: "full-height"
-  -
-    scope:
-      path: ""
-      type: "demon_hunter-relics"
-    values:
-      layout: "simulations/relics"
-      wowClass: "demon_hunter"
-      order: 2
+      order: 3
       chartStyleClass: "full-height"
   -
     scope:
@@ -91,7 +73,7 @@ defaults:
     values:
       layout: "simulations/trinkets"
       wowClass: "demon_hunter"
-      order: 3
+      order: 2
       chartStyleClass: "full-height"
   -
     scope:
@@ -114,16 +96,7 @@ defaults:
     values:
       layout: "simulations/races"
       wowClass: "druid"
-      order: 4
-      chartStyleClass: "full-height"
-  -
-    scope:
-      path: ""
-      type: "druid-relics"
-    values:
-      layout: "simulations/relics"
-      wowClass: "druid"
-      order: 2
+      order: 3
       chartStyleClass: "full-height"
   -
     scope:
@@ -132,7 +105,7 @@ defaults:
     values:
       layout: "simulations/trinkets"
       wowClass: "druid"
-      order: 3
+      order: 2
       chartStyleClass: "full-height"
   -
     scope:
@@ -155,16 +128,7 @@ defaults:
     values:
       layout: "simulations/races"
       wowClass: "hunter"
-      order: 4
-      chartStyleClass: "full-height"
-  -
-    scope:
-      path: ""
-      type: "hunter-relics"
-    values:
-      layout: "simulations/relics"
-      wowClass: "hunter"
-      order: 2
+      order: 3
       chartStyleClass: "full-height"
   -
     scope:
@@ -173,7 +137,7 @@ defaults:
     values:
       layout: "simulations/trinkets"
       wowClass: "hunter"
-      order: 3
+      order: 2
       chartStyleClass: "full-height"
   -
     scope:
@@ -196,16 +160,7 @@ defaults:
     values:
       layout: "simulations/races"
       wowClass: "mage"
-      order: 4
-      chartStyleClass: "full-height"
-  -
-    scope:
-      path: ""
-      type: "mage-relics"
-    values:
-      layout: "simulations/relics"
-      wowClass: "mage"
-      order: 2
+      order: 3
       chartStyleClass: "full-height"
   -
     scope:
@@ -214,7 +169,7 @@ defaults:
     values:
       layout: "simulations/trinkets"
       wowClass: "mage"
-      order: 3
+      order: 2
       chartStyleClass: "full-height"
   -
     scope:
@@ -237,16 +192,7 @@ defaults:
     values:
       layout: "simulations/races"
       wowClass: "monk"
-      order: 4
-      chartStyleClass: "full-height"
-  -
-    scope:
-      path: ""
-      type: "monk-relics"
-    values:
-      layout: "simulations/relics"
-      wowClass: "monk"
-      order: 2
+      order: 3
       chartStyleClass: "full-height"
   -
     scope:
@@ -255,7 +201,7 @@ defaults:
     values:
       layout: "simulations/trinkets"
       wowClass: "monk"
-      order: 3
+      order: 2
       chartStyleClass: "full-height"
   -
     scope:
@@ -278,16 +224,7 @@ defaults:
     values:
       layout: "simulations/races"
       wowClass: "paladin"
-      order: 4
-      chartStyleClass: "full-height"
-  -
-    scope:
-      path: ""
-      type: "paladin-relics"
-    values:
-      layout: "simulations/relics"
-      wowClass: "paladin"
-      order: 2
+      order: 3
       chartStyleClass: "full-height"
   -
     scope:
@@ -296,7 +233,7 @@ defaults:
     values:
       layout: "simulations/trinkets"
       wowClass: "paladin"
-      order: 3
+      order: 2
       chartStyleClass: "full-height"
   -
     scope:
@@ -319,16 +256,7 @@ defaults:
     values:
       layout: "simulations/races"
       wowClass: "priest"
-      order: 4
-      chartStyleClass: "full-height"
-  -
-    scope:
-      path: ""
-      type: "priest-relics"
-    values:
-      layout: "simulations/relics"
-      wowClass: "priest"
-      order: 2
+      order: 3
       chartStyleClass: "full-height"
   -
     scope:
@@ -337,7 +265,7 @@ defaults:
     values:
       layout: "simulations/trinkets"
       wowClass: "priest"
-      order: 3
+      order: 2
       chartStyleClass: "full-height"
   -
     scope:
@@ -360,16 +288,7 @@ defaults:
     values:
       layout: "simulations/races"
       wowClass: "rogue"
-      order: 4
-      chartStyleClass: "full-height"
-  -
-    scope:
-      path: ""
-      type: "rogue-relics"
-    values:
-      layout: "simulations/relics"
-      wowClass: "rogue"
-      order: 2
+      order: 3
       chartStyleClass: "full-height"
   -
     scope:
@@ -378,7 +297,7 @@ defaults:
     values:
       layout: "simulations/trinkets"
       wowClass: "rogue"
-      order: 3
+      order: 2
       chartStyleClass: "full-height"
   -
     scope:
@@ -401,16 +320,7 @@ defaults:
     values:
       layout: "simulations/races"
       wowClass: "shaman"
-      order: 4
-      chartStyleClass: "full-height"
-  -
-    scope:
-      path: ""
-      type: "shaman-relics"
-    values:
-      layout: "simulations/relics"
-      wowClass: "shaman"
-      order: 2
+      order: 3
       chartStyleClass: "full-height"
   -
     scope:
@@ -419,7 +329,7 @@ defaults:
     values:
       layout: "simulations/trinkets"
       wowClass: "shaman"
-      order: 3
+      order: 2
       chartStyleClass: "full-height"
   -
     scope:
@@ -442,16 +352,7 @@ defaults:
     values:
       layout: "simulations/races"
       wowClass: "warlock"
-      order: 4
-      chartStyleClass: "full-height"
-  -
-    scope:
-      path: ""
-      type: "warlock-relics"
-    values:
-      layout: "simulations/relics"
-      wowClass: "warlock"
-      order: 2
+      order: 3
       chartStyleClass: "full-height"
   -
     scope:
@@ -460,7 +361,7 @@ defaults:
     values:
       layout: "simulations/trinkets"
       wowClass: "warlock"
-      order: 3
+      order: 2
       chartStyleClass: "full-height"
   -
     scope:
@@ -483,16 +384,7 @@ defaults:
     values:
       layout: "simulations/races"
       wowClass: "warrior"
-      order: 4
-      chartStyleClass: "full-height"
-  -
-    scope:
-      path: ""
-      type: "warrior-relics"
-    values:
-      layout: "simulations/relics"
-      wowClass: "warrior"
-      order: 2
+      order: 3
       chartStyleClass: "full-height"
   -
     scope:
@@ -501,5 +393,5 @@ defaults:
     values:
       layout: "simulations/trinkets"
       wowClass: "warrior"
-      order: 3
+      order: 2
       chartStyleClass: "full-height"

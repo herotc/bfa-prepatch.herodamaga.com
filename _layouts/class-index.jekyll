@@ -17,8 +17,7 @@ layout: default
     {% endunless %}
   {% endfor %}
   {% assign simCollections = site.documents | where_exp: "item", "validCollections contains item.collection" | where_exp: "item", "item.collection != wowClass" | group_by: "collection" | sort: "name" %}
-  {% assign simCollectionsSize = simCollections | size %}
-  {% for index in (1..simCollectionsSize) %}
+  {% for index in (1..3) %}
     {% for simCollection in simCollections %}
       {% assign validCollection = simCollection.items | where_exp: "item", "item.order == index" %}
       {% if validCollection.first %}
@@ -51,7 +50,7 @@ layout: default
             <hr>
             {% include_cached layout-parts/ads/inarticle.jekyll %}
           {% endif %}
-          {% unless index == simCollectionsSize %}
+          {% unless index == 3 %}
             <hr>
           {% endunless %}
         {% endif %}
