@@ -133,7 +133,7 @@ langs.each do |lang|
       # TODO: Blacklist pantheon trinkets
       # TODO: Use bnet api to retrieve localized item name & quality
       json['player']['gear'].each do |slot, item|
-        if (reportInfos['tier'] != 'T21' && item['ilevel'] >= 970) || item['ilevel'] >= 1000
+        if item['ilevel'] >= 280
           player['legendariesName'].push("\"#{item['name'].gsub('_', ' ').titleize}\"")
         end
       end
