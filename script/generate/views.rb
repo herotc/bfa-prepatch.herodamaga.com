@@ -80,10 +80,6 @@ langs.each do |lang|
     reportFancyFightstyle = "#{localeLS['fightstyles'][reportInfos['fightstyle']]}"
     reportFancyTier = "#{localeLS['tiers'][reportInfos['tier']]}"
     reportFancyTierExpanded = "#{localeLS['tiersExpanded'][reportInfos['tier']]}"
-    if reportInfos['type'] == "Combinator" && reportInfos['tier'] == 'T21' # Combinator does have tier distinction
-      reportFancyTier += " Mythic"
-      reportFancyTierExpanded += " Mythic"
-    end
     reportSpecWithSuffix = "#{reportInfos['spec']}"
     if reportInfos['suffix']
       reportSpecWithSuffix += " #{reportInfos['suffix']}"
