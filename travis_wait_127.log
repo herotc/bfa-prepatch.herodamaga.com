@@ -1,7 +1,6 @@
 [CI] Get the SHA of the commit we are deploying
 [CI] Cloning the repository in deploy directory (without master checkout)
 [CI] Checking out the target branch
-error: pathspec 'gh-pages' did not match any file(s) known to git.
 [CI] Cleaning up contents from deploy directory
 [CI] Jekyll build
 Configuration file: _config.yml
