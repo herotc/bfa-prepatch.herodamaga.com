@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/herotc/legion.herodamage.com.git"
+    "url": "https://github.com/herotc/bfa-prepatch.herodamage.com.git"
   },
   "dependencies": {
     "crass": "^0.12.3",

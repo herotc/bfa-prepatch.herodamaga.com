@@ -1,4 +1,4 @@
-# legion.herodamage.com
+# bfa-prepatch.herodamage.com
 This website was created in order to serve Rogue Theorycrafting Resources and Simulation results before being extended to every classes.
 Simulations are powered by [SimcScripts](https://github.com/Ravenholdt-TC/SimcScripts).
 
