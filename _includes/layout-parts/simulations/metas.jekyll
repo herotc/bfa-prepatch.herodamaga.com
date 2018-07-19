@@ -1,8 +1,8 @@
 <hr>
 <div id="simulations-metas">
   <p>
-    <b>{{ site.data.locale.includes.layout-parts.simulations.metas['Last Update:'] }}</b> {{ page.lastupdate }} {% if page.gitrevision %}<a href="https://github.com/simulationcraft/simc/commit/{{ page.gitrevision }}" title="Corresponding SimC commit" target="_blank">#{{ page.gitrevision }}</a>{% endif %}<br>
-    <b>{{ site.data.locale.includes.layout-parts.simulations.metas['WoW-Build:'] }}</b> {{ page.build }}<br>
+    <b>{{ site.data.locale.includes.layout-parts.simulations.metas['Last Update:'] }}</b> {{ page.buildtimestamp | date: "%b %d %Y %H:%M" }} (UTC)<br>
+    <b>{{ site.data.locale.includes.layout-parts.simulations.metas['WoW-Build:'] }}</b> {{ page.build }} {% if page.gitrevision %}<a href="https://github.com/simulationcraft/simc/commit/{{ page.gitrevision }}" title="Corresponding SimC commit" target="_blank">#{{ page.gitrevision }}</a>{% endif %}<br>
     <b>{{ site.data.locale.includes.layout-parts.simulations.metas['Target Error:'] }}</b> {{ page.targeterror }}%<br>
   </p>
   {% if page.legendaries %}
