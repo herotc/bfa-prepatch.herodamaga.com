@@ -129,11 +129,10 @@ langs.each do |lang|
       json['player']['talents'].each do |talent|
         player['talentsName'].push("\"#{talent['name']}\"")
       end
-      # TODO: Remove legendaries at 970 once everything will be at 1000
       # TODO: Blacklist pantheon trinkets
       # TODO: Use bnet api to retrieve localized item name & quality
       json['player']['gear'].each do |slot, item|
-        if item['ilevel'] >= 280
+        if item['ilevel'] >= 265
           player['legendariesName'].push("\"#{item['name'].gsub('_', ' ').titleize}\"")
         end
       end
