@@ -1,1 +1,18 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 470.74 474.74"><title>logo</title><path d="M21.91,100.56l91.58,394.76,266-251.8,59.69,59.66,53.44-282.6L206.5,74,268,135,125.19,322.95Zm193.2,182.18a20.8,20.8,0,0,1,27.81-19.57l34.21-35.55-30.81-33.06L260,181.82l16.19,17.37L409.82,60.9,470.34,42,452.89,102.5,317.05,243l16.86,18.1-13.67,12.74-30.36-32.58L255.8,276.73a20.79,20.79,0,1,1-40.69,6h0Zm75.62-68.88,13.46,13L437.6,88.26l-13.46-13L290.73,213.85h0Z" transform="translate(-21.91 -20.57)" fill="#b62025"/></svg>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="896px" height="896px" viewBox="0 0 896 896" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>logo</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="logo" transform="translate(-11.000000, -88.000000)">
+            <g id="arrow" transform="translate(1.000000, 0.000000)" fill="#B71C1C">
+                <path d="M719,496 L204,920 L44.000304,304 L225,670 L527,304 L463,240 L872,151 L783,560 L719,496 Z"></path>
+            </g>
+            <g id="sword" transform="translate(387.000000, 215.000000)">
+                <path d="M45.171962,360.828038 L117,289 L61,233 L77,217 L109,249 L333,25 L422,0 L397,89 L173,313 L205,345 L189,361 L133,305 L61.171962,376.828038 C62.9886745,380.845192 64,385.304492 64,390 C64,407.673112 49.673112,422 32,422 C14.326888,422 0,407.673112 0,390 C0,372.326888 14.326888,358 32,358 C36.6955078,358 41.1548079,359.011325 45.171962,360.828038 Z" fill="#FFFFFF"></path>
+                <path d="M357,49 L379,43 L373,65 L165,273 L149,257 L357,49 Z" id="fuller" fill="#B71C1C"></path>
+            </g>
+        </g>
+    </g>
+</svg>
