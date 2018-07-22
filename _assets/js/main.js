@@ -96,6 +96,7 @@
     hd.combinationsUpdate = function combinationsUpdate() {
       if (!combinationsData)
         return;
+      var entriesPerPage = 15;
       var filterTalents = document.getElementById("combinations-table-filter-talents").value;
       var filterTalentsRegex = new RegExp("^" + filterTalents.replace(new RegExp("x|\\*", "ig"), "[0-3]"), "i");
       var filterSets = setSelect.val();
@@ -115,11 +116,11 @@
       if ($tableNav.data("twbs-pagination"))
         $tableNav.twbsPagination("destroy");
       $tableNav.twbsPagination({
-        totalPages: Math.max(1, Math.ceil(combinationsRows.length / 15)),
+        totalPages: Math.max(1, Math.ceil(combinationsRows.length / entriesPerPage)),
         visiblePages: 3,
         onPageClick: function (event, page) {
           var html = "";
-          combinationsRows.slice((page - 1) * 15, page * 15).forEach(function (columns) {
+          combinationsRows.slice((page - 1) * entriesPerPage, page * entriesPerPage).forEach(function (columns) {
             html += "<tr>";
             html += "<td>" + columns[0] + "</td>";
             html += "<td>" + columns[1] + "</td>";
