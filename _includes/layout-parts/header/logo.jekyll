@@ -1,4 +1,7 @@
-<a class="navbar-brand" href="/" title="Home">
+<a class="navbar-brand site-name" href="/" title="Home">
   <img src="{% asset logo.svg @path %}" alt="{{ site.name }} Logo" height="32" width="32" itemprop="logo">
-  {{ site.name }}
+  {% assign siteNames = site.name | split: ' ' %}
+  {% for siteName in siteNames %}
+    <span>{{ siteName }}</span>
+  {% endfor %}
 </a>

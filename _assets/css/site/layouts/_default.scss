@@ -17,6 +17,17 @@ body {
     }
   }
 
+  .site-name {
+    span {
+      color: $hero-white;
+      font-weight: bold;
+
+      &:nth-of-type(2) {
+        color: $hero-red;
+      }
+    }
+  }
+
   // Ads
   .container {
     &#a-top-d, &#a-bot-d {
