@@ -4,7 +4,6 @@
   </a>
 </nav>
 <div class="container alert alert-warning">
-  Those simulations are constantly updated. If you don't see your class or some simulations are missing it is because either it's not finalized on SimC end or on our end.<br>
-  You can find more informations on the state of SimC implementations <a href="https://docs.google.com/spreadsheets/d/1688RgWQYob8AD5blizhV-7jYTKkCTmBGLt0RppootNY/" title="BfA SimC State" target="_blank">here</a>.<br>
+  Those simulations are constantly updated. <a href="https://docs.google.com/spreadsheets/d/1688RgWQYob8AD5blizhV-7jYTKkCTmBGLt0RppootNY/" title="BfA SimC State" target="_blank">Link to SimC implementations state spreadsheet</a>.<br>
   <strong>Keep in mind that those data can be considered expiremental since PrePatch lasts only few weeks.</strong>
 </div>
