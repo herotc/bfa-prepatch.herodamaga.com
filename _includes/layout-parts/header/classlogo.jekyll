@@ -3,7 +3,3 @@
     <img src="{% asset wowclasspicker/'{{include.wowClass}}'.svg  @path %}" alt="{{ site.name }} Logo" height="150" width="150" itemprop="logo">
   </a>
 </nav>
-<div class="container alert alert-warning">
-  Those simulations are constantly updated. <a href="https://docs.google.com/spreadsheets/d/1688RgWQYob8AD5blizhV-7jYTKkCTmBGLt0RppootNY/" title="BfA SimC State" target="_blank">Link to SimC implementations state spreadsheet</a>.<br>
-  <strong>Keep in mind that those data can be considered expiremental since PrePatch lasts only few weeks.</strong>
-</div>
