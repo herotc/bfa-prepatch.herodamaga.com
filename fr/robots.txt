@@ -1,1 +1,1 @@
-Sitemap: https://www.herodamage.com/sitemap.xml
+Sitemap: https://bfa-prepatch.herodamage.com/sitemap.xml
